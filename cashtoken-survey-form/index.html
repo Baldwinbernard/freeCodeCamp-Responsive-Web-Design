@@ -1,0 +1,58 @@
+<!DOCTYPE>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>
+      Survey Form
+      </title>
+      <link rel="Stylesheet" href="styles.css"/>
+      </head>
+<body>
+  <h1 id="title">CashToken Survey Form</h1>
+  <p id="description">This is a survey form to gather feedback about your experience with CashToken</p>
+  <form id="survey-form">
+    
+    <div class="form-group">
+      <label id="name-label" for="name">Full Name: </label><input type="text" placeholder="Enter your name" name="name" id="name" class="form-control" required/>
+    </div> 
+    <div class="form-group"> 
+      <label id="email-label" for="email">Email: </label><input name="email" id="email" type="email" placeholder="Enter your email" class="form-control" required/>
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number">Age: <input name="number" id="number" type="number" placeholder="Age" min="15" max="70" required/></label>
+    </div>
+<label for="dropdown">What is your role:
+   <select id="dropdown">
+    <option value="">(select one)</option>
+    <option value="1">Accounting Manager</option>
+    <option value="2">Chief Accounting Officer</option>
+    <option value="3">Internal Auditor</option>
+   </select>
+   </label>
+   <hr/>
+   <legend>Would you like more staffs in your department?</legend>
+   <label for="definitely"><input name="choice" type="radio" value="Definitely" class="inline"/>Definitely</label>
+   <label for="Yes"><input name="choice" type="radio" value="Yes" class="inline"/>Yes</label>
+   <label for="No"><input name="choice" type="radio" value="No" class="inline"/>No</label>
+   <legend>Would you recommend CashToken to friends and family?</legend>
+   <label for="Definitely"><input name="choice" type="radio" value="definitely" class="inline" id="definitely"/>Definitely</label>
+   <label for="Yes"><input name="choice" type="radio" value="Yes" class="inline" id="yes"/>Yes</label>
+   <label for="No"><input name="choice" type="radio" value="No" id="No" class="inline"/>No</label>
+   <legend>What Department would you like to see improved?</legend><label for="Accounts"><input type="checkbox" name="choice" id="Accounts" value="accounts"/>Accounts</label>
+   <label for="Tech"><input name="choice"type="checkbox" id="Tech" value="tech"/>Tech</label>
+   <label for="Sales"><input name="choice" type="checkbox" id="Sales" value="sales"/>Sales</label>
+   <label for="Marketing"><input id="marketing" name="choice" type="checkbox" value="marketing"/>Marketing</label>
+  <label for="Business-Expansion"><input id="Business-Expansion" name="choice" type="checkbox" value="business-expansion"/>Business Expansion</label>
+   <label for="HR"><input name="choice" type="checkbox" id="HR" value="hr"/>HR</label>
+   <label for="Legal"><input name="choice" type="checkbox" id="legal" value="legal"/>Legal</label>
+  
+   <label for="feedback">
+     Additional comment:<textarea id="bio" name="bio" placeholder="Enter your comment..."></textarea></label>
+    <input id="submit" type="submit" value="Submit">
+  
+  
+   
+  </form>
+</body>
+  </html
