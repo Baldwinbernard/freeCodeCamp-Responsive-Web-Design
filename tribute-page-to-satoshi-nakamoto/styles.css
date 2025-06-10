@@ -1,0 +1,13 @@
+img{
+  width: auto;
+  max-width: 100%;
+  display: block;
+}
+#img-div{
+  text-align: center;
+  margin: 20px 0;
+}
+#img-caption{
+  text-align: center;
+  font-style: italic;
+}
